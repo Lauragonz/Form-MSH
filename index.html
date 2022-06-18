@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/circle.ico">
+    <title>MSH: Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Mind Soul Heart Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="form-group1">
+                <label for="name">Name</label>
+                <input type="text" id="name" title="name" placeholder="Enter your name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" title="mail" placeholder="Enter you Email" required>
+                <label for="age">Age (optional)</label>
+                <input type="number" max="99" min="13" id="age" title="age" placeholder="Enter your age">
+            </div>
+            <div class="form-group2">
+                <p class="title-p">
+                    Would you recommend Mind Sould Heart to a friend?
+                </p>
+                <label>
+                    <input name="User recommended" value="Definitly" type="radio" class="input-radio" checked title="definitly"> Definitly
+                </label>
+                <label>
+                    <input name="User recommended" value="Maybe" type="radio" class="input-radio" title="maybe">Maybe
+                </label>
+                <label>
+                    <input name="User recommended" value="Not sure" type="radio" class="input-radio" title="not sure">Not sure
+                </label>
+            </div>
+            <div class="form-group3">
+                <p class="title-p">
+                    What is your favorite feature of Mind Sould Heart?
+                </p>
+                <select id="dropdown">
+                    <option disabled selected value>Select an option</option>
+                    <option value="Challenges">Challenges</option>
+                    <option value="Comunity">Comunity</option>
+                    <option value="Interchanges">Interchanges</option>
+                    <option value="Projects">Projects</option>
+                </select>
+            </div>
+            <div class="form-group4">
+                <p class="title-p">What would you like to improve? (Check all that apply)</p>
+                <label>
+                    <input name="prefer" type="checkbox" class="input-chackbox">More challenges
+                </label>
+                <label>
+                    <input name="prefer" type="checkbox" class="input-chackbox">Wiki
+                </label>
+                <label>
+                    <input name="prefer" type="checkbox" class="input-chackbox">Videos
+                </label>
+                <label>
+                    <input name="prefer" type="checkbox" class="input-chackbox">Tutorials
+                </label>
+                <label>
+                    <input name="prefer" type="checkbox" class="input-chackbox">More tools
+                </label>
+            </div>
+            <div class="form-group5">
+                <p class="title-p">Any comments or sugestions?</p>
+                <textarea class="input-area" placeholder="Enter your comments here ..." name="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group6">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="sigla">
+            Mind Soul Heart
+        </p>
+        <p>
+            laura.gonzmau@gmail.com
+        </p>
+    </footer>
+    
+</body>
+</html>
